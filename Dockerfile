@@ -1,6 +1,6 @@
 FROM debian:9
 
-RUN apt-get update -yq && apt-get install wget unzip -y
+RUN apt-get update -yq && apt-get install wget unzip python -y
 RUN mkdir -p /opt/coin
 WORKDIR /opt/coin
 RUN wget https://github.com/CoinBlack/blackcoin/releases/download/v1.2.5.2/blackcoin-1.2.5.2-linux.zip -O tmp.zip && \
