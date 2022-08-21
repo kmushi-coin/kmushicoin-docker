@@ -1,25 +1,15 @@
-# blackcoin-docker
-Dockerfile for blackcoin
+# kmushicoin-docker
+Dockerfile for Kmushicoin
 
 
 # Building
 
 ```bash
-docker build -t blackcoin .
+docker build -t kmushicoin .
 ```
 
 # Running
 
-Customize config file `coin.conf` first.
-
 ```bash
-# block dir
-mkdir data
-docker run --rm -it --name blackcoin-node -p 0.0.0.0:15715:15715 -v `pwd`/data:/opt/coin/data -v `pwd`/coin.conf:/opt/coin/coin.conf blackcoin
-```
-
-# Using pre-built docker image
-
-```bash
-docker run --rm -it --name blackcoin-node -p 0.0.0.0:15715:15715 -v `pwd`/data:/opt/coin/data -v `pwd`/coin.conf:/opt/coin/coin.conf mixhq/blackcoin:latest
+docker run --rm -it --name kmushicoin-node -p 0.0.0.0:36600:36600 kmushicoin
 ```
