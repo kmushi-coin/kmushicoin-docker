@@ -8,9 +8,10 @@ RUN wget https://github.com/kmushi-coin/kmushicoin-source/releases/download/1.2.
   rm -f tmp.tar.gz
   
 RUN wget https://github.com/kmushi-coin/kmushicoin-source/releases/download/KmushiCoin.conf/KmushiCoin.conf
+RUN wget https://github.com/kmushi-coin/kmushicoin-source/releases/download/Bootstrap.14.06.2022/bootstrap.dat
 
 VOLUME ["/opt/coin/data", "/opt/coin/KmushiCoin.conf"]
 EXPOSE 15715
 
 ENTRYPOINT ["/opt/coin/KmushiCoind"]
-CMD ["-conf=/opt/coin/KmushiCoin.conf"]
+CMD ["-conf=/opt/coin/KmushiCoin.conf", ["-datadir=/opt/coin/"]]
