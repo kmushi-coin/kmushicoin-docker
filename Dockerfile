@@ -10,7 +10,7 @@ RUN wget https://github.com/kmushi-coin/kmushicoin-source/releases/download/1.2.
 RUN wget https://github.com/kmushi-coin/kmushicoin-source/releases/download/KmushiCoin.conf/KmushiCoin.conf
 RUN wget https://github.com/kmushi-coin/kmushicoin-source/releases/download/Bootstrap.14.06.2022/bootstrap.dat
 
-VOLUME ["/opt/coin/data", "/opt/coin/KmushiCoin.conf"]
+VOLUME ["/opt/coin/data"]
 EXPOSE 36600
 
 ENTRYPOINT ["/opt/coin/KmushiCoind"]
