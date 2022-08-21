@@ -8,7 +8,6 @@ RUN wget https://github.com/kmushi-coin/kmushicoin-source/releases/download/1.2.
   rm -f tmp.tar.gz
 
 RUN wget https://raw.githubusercontent.com/kmushi-coin/kmushicoin-docker/master/KmushiCoin.conf
-RUN wget https://github.com/kmushi-coin/kmushicoin-source/releases/download/Bootstrap.14.06.2022/bootstrap.dat
 
 EXPOSE 36600
 
